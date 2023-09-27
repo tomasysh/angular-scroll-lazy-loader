@@ -1,0 +1,24 @@
+p {
+  font-family: Lato;
+}
+
+.example-viewport {
+  height: 200px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.example-item {
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.example-item:nth-child(odd) {
+    background-color: rgb(213, 250, 195);
+}
+.example-item:nth-child(even) {
+    background-color: rgb(195, 248, 255);
+}

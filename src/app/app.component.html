@@ -1,0 +1,13 @@
+<h1>{{ name }}</h1>
+
+<ng-container *ngIf="infinite | async; let items">
+
+	<cdk-virtual-scroll-viewport class="example-viewport"
+   [itemSize]="itemSize" [minBufferPx]="itemSize" [maxBufferPx]="itemSize">
+		<div *cdkVirtualFor="let item of items; trackBy: trackByIdx"
+         class="example-item">
+      <b>{{item}}</b>
+     </div>
+	</cdk-virtual-scroll-viewport>
+
+</ng-container>
